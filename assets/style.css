@@ -51,10 +51,19 @@ a { color: inherit; }
 /* --- Marca --------------------------------------------------------------- */
 .logo {
   display: inline-flex;
-  align-items: baseline;
-  gap: 7px;
+  align-items: center;
+  gap: 9px;
   text-decoration: none;
   font-family: var(--font-display);
+}
+
+/* El logo es arte neón sobre negro: screen funde el negro con el fondo */
+.logo-mark {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  mix-blend-mode: screen;
+  flex-shrink: 0;
 }
 .logo-mnk {
   font-weight: 900;
@@ -91,11 +100,14 @@ nav {
 
 .nav-links {
   display: flex;
-  gap: 26px;
+  flex-wrap: wrap;
+  gap: 10px 26px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
+.nav-links li { white-space: nowrap; }
 
 .nav-links a {
   text-decoration: none;
@@ -185,6 +197,22 @@ section { padding: 68px 0; }
 
 /* --- Hero ---------------------------------------------------------------- */
 .hero { padding: 88px 0 64px; }
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.hero-text { flex: 1; min-width: 0; }
+
+.hero-logo {
+  flex-shrink: 0;
+  width: 320px;
+  height: 320px;
+  object-fit: contain;
+  mix-blend-mode: screen;
+}
 
 .hero .lead {
   color: var(--text-dim);
@@ -509,6 +537,11 @@ footer {
 .pager a:hover { color: var(--accent); }
 
 /* --- Responsive ---------------------------------------------------------- */
+@media (max-width: 900px) {
+  .hero-inner { flex-direction: column-reverse; gap: 24px; }
+  .hero-logo { width: 200px; height: 200px; }
+}
+
 @media (max-width: 760px) {
   .card-featured { flex-direction: column; gap: 0; }
   .featured-media { width: 100%; }
