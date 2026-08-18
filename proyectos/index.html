@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Proyectos — Nicolás Llaneza</title>
-<meta name="description" content="Proyectos de Nicolás Llaneza: sistema de seguimiento post-venta para Neu+, flowpedidos, TremendoGol y Food Store, con caso de estudio de cada uno.">
+<title>Casos — MNK Labs</title>
+<meta name="description" content="Casos de MNK Labs: sistema de seguimiento post-venta en producción para Neu+, más los proyectos de laboratorio donde probamos arquitecturas e integraciones.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
@@ -12,10 +15,11 @@
 <header>
   <div class="wrap">
     <nav>
-      <a class="logo" href="../index.html">Nicolás Llaneza</a>
+      <a class="logo" href="../index.html"><span class="logo-mnk">MNK</span><span class="logo-labs">LABS</span></a>
       <ul class="nav-links">
-        <li><a href="./">Proyectos</a></li>
-        <li><a href="../index.html#nosotros">Sobre nosotros</a></li>
+        <li><a href="../index.html#servicios">Servicios</a></li>
+        <li><a href="../index.html#nosotros">Nosotros</a></li>
+        <li><a href="./">Casos</a></li>
         <li><a href="../index.html#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -26,77 +30,93 @@
   <div class="wrap">
     <section class="page-hero">
       <a class="back-link" href="../index.html">← Volver al inicio</a>
-      <div class="eyebrow">Proyectos</div>
-      <h1>Cuatro proyectos, cuatro contextos distintos</h1>
+      <div class="eyebrow">Casos</div>
+      <h1>Lo que <span class="underline">construimos</span></h1>
       <p class="section-sub">
-        Una tesis con arquitectura de integración e IA, una app en producción para un
-        cliente real, un trabajo grupal de la cursada y un proyecto personal. Cada tarjeta
-        lleva a su caso de estudio completo.
+        Un sistema funcionando todos los días en el negocio de un cliente, y los proyectos
+        de laboratorio donde probamos arquitecturas e integraciones antes de llevarlas a un
+        trabajo pago. Cada uno tiene su caso de estudio completo.
       </p>
     </section>
 
     <section style="padding-top: 0;">
-      <div class="projects-grid">
-
-        <a class="card" href="neu.html">
-          <img class="card-image" src="../assets/neu.jpg" alt="Panel de clientes del sistema (recreación con datos de ejemplo)">
-          <div class="card-image-caption">Recreación de la UI con datos de ejemplo.</div>
-          <div class="card-kicker">Producción · Cliente real</div>
-          <h3>Sistema de seguimiento post-venta</h3>
-          <p>
-            Sistema a medida para Neu+, un taller de neumáticos, en uso todos los días.
-            Gestión de clientes y vehículos, consulta pública por patente, notificaciones
-            por WhatsApp.
-          </p>
-          <div class="tags">
-            <span>React</span><span>Supabase</span><span>PostgreSQL</span><span>Vercel</span>
+      <div class="service-group">
+        <div class="group-label">En producción</div>
+        <a class="card card-featured" href="neu.html">
+          <div class="featured-media">
+            <img class="card-image" src="../assets/neu.jpg" alt="Panel de clientes del sistema (recreación con datos de ejemplo)">
+            <div class="card-image-caption">Recreación de la UI con datos de ejemplo.</div>
           </div>
-          <span class="card-cta">Ver caso de estudio →</span>
-        </a>
-
-        <a class="card" href="flowpedidos.html">
-          <img class="card-image" src="../assets/flowpedidos.jpg" alt="Panel operativo de FlowPedidos mostrando KPIs y pedidos multicanal">
-          <div class="card-kicker">Trabajo final integrador</div>
-          <h3>flowpedidos</h3>
-          <p>
-            Arquitectura de integración multicanal para PyMEs de e-commerce: centraliza
-            pedidos de Mercado Libre, WhatsApp, WooCommerce y Tienda Nube en un modelo de
-            datos canónico único, con mensajes generados por IA.
-          </p>
-          <div class="tags">
-            <span>n8n</span><span>PostgreSQL</span><span>OpenAI</span><span>Claude</span>
+          <div class="featured-body">
+            <div class="card-kicker">Cliente real · En uso</div>
+            <h3>Sistema de seguimiento post-venta</h3>
+            <p>
+              Sistema a medida para Neu+, un taller de neumáticos, en uso todos los días.
+              Gestión de clientes y vehículos, consulta pública por patente, notificaciones
+              automáticas por WhatsApp. La base es replicable a cualquier rubro donde el
+              cliente vuelve.
+            </p>
+            <div class="tags">
+              <span>React</span><span>Supabase</span><span>PostgreSQL</span><span>Vercel</span>
+            </div>
+            <span class="card-cta">Ver caso de estudio →</span>
           </div>
-          <span class="card-cta">Ver caso de estudio →</span>
         </a>
+      </div>
 
-        <a class="card" href="tremendogol.html">
-          <img class="card-image" src="../assets/tremendogol.jpg" alt="App TremendoGol mostrando fixtures de fútbol del día agrupados por liga">
-          <div class="card-kicker">Proyecto personal</div>
-          <h3>TremendoGol</h3>
-          <p>
-            App mobile-first de fixtures, resultados y tablas de posiciones de fútbol,
-            agrupados por liga y con traducción de estados de partido en vivo.
-          </p>
-          <div class="tags">
-            <span>React</span><span>Express</span><span>Prisma</span><span>PostgreSQL</span>
-          </div>
-          <span class="card-cta">Ver caso de estudio →</span>
-        </a>
+      <div class="service-group">
+        <div class="group-label">Laboratorio</div>
+        <p class="section-sub" style="margin-bottom: 22px;">
+          Proyectos propios y académicos donde probamos tecnología a fondo. No son trabajos
+          para cliente, pero es de acá de donde salen las decisiones técnicas que después
+          aplicamos en producción.
+        </p>
+        <div class="projects-grid">
 
-        <a class="card" href="foodstore.html">
-          <img class="card-image" src="../assets/foodstore.jpg" alt="Catálogo de Food Store con filtros por categoría y precio">
-          <div class="card-kicker">Trabajo grupal · Cursada</div>
-          <h3>Food Store</h3>
-          <p>
-            E-commerce de productos alimenticios hecho en equipo: catálogo, carrito y
-            pedidos con máquina de estados, panel admin y auth con JWT y roles.
-          </p>
-          <div class="tags">
-            <span>FastAPI</span><span>SQLModel</span><span>React</span><span>TypeScript</span>
-          </div>
-          <span class="card-cta">Ver caso de estudio →</span>
-        </a>
+          <a class="card" href="flowpedidos.html">
+            <img class="card-image" src="../assets/flowpedidos.jpg" alt="Panel operativo de FlowPedidos mostrando KPIs y pedidos multicanal">
+            <div class="card-kicker">Arquitectura · Integración</div>
+            <h3>flowpedidos</h3>
+            <p>
+              Arquitectura de integración multicanal para PyMEs de e-commerce: centraliza
+              pedidos de Mercado Libre, WhatsApp, WooCommerce y Tienda Nube en un modelo de
+              datos canónico único, con mensajes generados por IA.
+            </p>
+            <div class="tags">
+              <span>n8n</span><span>PostgreSQL</span><span>OpenAI</span><span>Claude</span>
+            </div>
+            <span class="card-cta">Ver caso de estudio →</span>
+          </a>
 
+          <a class="card" href="tremendogol.html">
+            <img class="card-image" src="../assets/tremendogol.jpg" alt="App TremendoGol mostrando fixtures de fútbol del día agrupados por liga">
+            <div class="card-kicker">Producto propio</div>
+            <h3>TremendoGol</h3>
+            <p>
+              App mobile-first de fixtures, resultados y tablas de posiciones de fútbol,
+              agrupados por liga y con traducción de estados de partido en vivo.
+            </p>
+            <div class="tags">
+              <span>React</span><span>Express</span><span>Prisma</span><span>PostgreSQL</span>
+            </div>
+            <span class="card-cta">Ver caso de estudio →</span>
+          </a>
+
+          <a class="card" href="foodstore.html">
+            <img class="card-image" src="../assets/foodstore.jpg" alt="Catálogo de Food Store con filtros por categoría y precio">
+            <div class="card-kicker">Trabajo en equipo</div>
+            <h3>Food Store</h3>
+            <p>
+              E-commerce de productos alimenticios: catálogo, carrito y pedidos con máquina
+              de estados, panel admin y autenticación con JWT y roles por endpoint.
+            </p>
+            <div class="tags">
+              <span>FastAPI</span><span>SQLModel</span><span>React</span><span>TypeScript</span>
+            </div>
+            <span class="card-cta">Ver caso de estudio →</span>
+          </a>
+
+        </div>
       </div>
     </section>
   </div>
@@ -104,7 +124,7 @@
 
 <footer>
   <div class="wrap">
-    © <span id="year"></span> Nicolás Llaneza
+    © <span id="year"></span> MNK Labs · Mendoza, Argentina
   </div>
 </footer>
 

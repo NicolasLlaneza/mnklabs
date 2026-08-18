@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>flowpedidos — Nicolás Llaneza</title>
+<title>flowpedidos — MNK Labs</title>
 <meta name="description" content="Caso de estudio: arquitectura de integración multicanal para PyMEs de e-commerce con n8n, PostgreSQL y mensajes generados por IA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
@@ -12,10 +15,11 @@
 <header>
   <div class="wrap">
     <nav>
-      <a class="logo" href="../index.html">Nicolás Llaneza</a>
+      <a class="logo" href="../index.html"><span class="logo-mnk">MNK</span><span class="logo-labs">LABS</span></a>
       <ul class="nav-links">
-        <li><a href="./">Proyectos</a></li>
-        <li><a href="../index.html#nosotros">Sobre nosotros</a></li>
+        <li><a href="../index.html#servicios">Servicios</a></li>
+        <li><a href="../index.html#nosotros">Nosotros</a></li>
+        <li><a href="./">Casos</a></li>
         <li><a href="../index.html#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -25,8 +29,8 @@
 <main>
   <div class="wrap">
     <section class="case-hero">
-      <a class="back-link" href="./">← Volver a proyectos</a>
-      <div class="card-kicker">Trabajo final integrador</div>
+      <a class="back-link" href="./">← Volver a casos</a>
+      <div class="card-kicker">Laboratorio · Arquitectura</div>
       <h1>flowpedidos</h1>
       <p class="lead">
         Arquitectura de integración multicanal para PyMEs de e-commerce: centraliza pedidos
@@ -35,8 +39,8 @@
       </p>
 
       <div class="case-meta">
-        <div><div class="label">Rol</div><div class="value">Trabajo en equipo (3 personas)</div></div>
-        <div><div class="label">Contexto</div><div class="value">Tesis · UTN-FRM 2026</div></div>
+        <div><div class="label">Tipo</div><div class="value">Laboratorio · 3 personas</div></div>
+        <div><div class="label">Foco</div><div class="value">Integración multicanal e IA</div></div>
         <div><div class="label">Stack</div><div class="value">n8n · PostgreSQL · OpenAI · Claude</div></div>
       </div>
 
@@ -53,14 +57,14 @@
         separado, lo que genera errores, demoras y datos inconsistentes entre canales.
       </p>
 
-      <h2>Qué construí</h2>
+      <h2>Qué construimos</h2>
       <p>
         Un pipeline real, orquestado con n8n, que recibe el webhook de cualquier canal y lo
         procesa siempre de la misma forma: validación → enrich (consulta al canal de
         origen) → normalización a un modelo de datos canónico → chequeo de idempotencia →
         persistencia en PostgreSQL → seudonimización de datos del cliente → generación del
         mensaje de respuesta con un LLM → auditoría de todo el proceso. Encima del pipeline
-        armé un panel operativo con KPIs (pedidos procesados, ingresos, pendientes,
+        armamos un panel operativo con KPIs (pedidos procesados, ingresos, pendientes,
         mensajes enviados) y una vista unificada de todos los pedidos, sin importar de qué
         canal vinieron.
       </p>
@@ -89,7 +93,7 @@
         </li>
       </ul>
 
-      <h2>Qué haría distinto</h2>
+      <h2>Qué haríamos distinto</h2>
       <p>
         Hoy el pipeline se prueba contra mocks de cada plataforma (Mercado Libre, WhatsApp,
         etc.) en vez de las integraciones reales, que requieren aprobaciones de cada
@@ -108,7 +112,7 @@
 
 <footer>
   <div class="wrap">
-    © <span id="year"></span> Nicolás Llaneza
+    © <span id="year"></span> MNK Labs · Mendoza, Argentina
   </div>
 </footer>
 

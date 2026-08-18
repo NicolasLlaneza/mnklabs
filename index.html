@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nicolás Llaneza — Desarrollador Full Stack</title>
-<meta name="description" content="Portfolio de Nicolás Llaneza, desarrollador full stack. Proyectos con React, Node, FastAPI, Supabase y n8n.">
+<title>MNK Labs — Software y marketing para tu negocio</title>
+<meta name="description" content="MNK Labs: desarrollo de sitios web, sistemas a medida, automatizaciones e identidad de marca. Estudio de software y marketing en Mendoza.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -12,10 +15,12 @@
 <header>
   <div class="wrap">
     <nav>
-      <a class="logo" href="#top">Nicolás Llaneza</a>
+      <a class="logo" href="#top"><span class="logo-mnk">MNK</span><span class="logo-labs">LABS</span></a>
       <ul class="nav-links">
-        <li><a href="#nosotros">Sobre nosotros</a></li>
-        <li><a href="proyectos/">Proyectos</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#sistema">Sistema post-venta</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="proyectos/">Casos</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -24,22 +29,104 @@
 
 <main>
   <div class="wrap">
+
     <section class="hero" id="top">
-      <div class="hero-inner">
-        <div class="hero-text">
-          <div class="eyebrow">Portfolio</div>
-          <h1>Nicolás Llaneza<br>Desarrollador Full Stack</h1>
-          <p class="lead">
-            Construyo aplicaciones web de punta a punta: desde el modelo de datos y la API
-            hasta la interfaz. Formado en la Tecnicatura Universitaria en Programación (UTN-FRM),
-            con experiencia llevando un proyecto real a producción para un cliente.
-          </p>
-          <div class="btn-row">
-            <a class="btn btn-primary" href="proyectos/">Ver proyectos</a>
-            <a class="btn btn-ghost" href="#contacto">Contactarme</a>
+      <div class="eyebrow">Desarrollo · Marketing</div>
+      <h1>Lo que tu negocio<br>necesita para <span class="underline">despegar</span></h1>
+      <p class="lead">
+        Construimos el software que tu negocio necesita para trabajar mejor —sitios,
+        sistemas a medida y automatizaciones— y la marca que lo pone frente a tus clientes.
+        Todo a medida, nada de plantillas.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="#servicios">Ver servicios</a>
+        <a class="btn btn-ghost" href="https://wa.me/5492613075850" target="_blank" rel="noopener">Escribinos por WhatsApp</a>
+      </div>
+    </section>
+
+    <section id="servicios">
+      <h2>¿Qué hacemos?</h2>
+      <p class="section-sub">
+        Dos frentes que se potencian: las herramientas para que tu negocio funcione mejor
+        puertas adentro, y la marca para que se note puertas afuera.
+      </p>
+
+      <div class="service-group">
+        <div class="group-label">Desarrollo e IT</div>
+        <div class="services-grid">
+          <div class="service">
+            <h3>Sitios web</h3>
+            <p>
+              Tu negocio online, rápido y pensado para el celular primero. Desde una
+              landing que convierte hasta un sitio con catálogo y contenido que
+              actualizás vos, sin depender de nadie.
+            </p>
+          </div>
+          <div class="service">
+            <h3>Sistemas a medida</h3>
+            <p>
+              Software hecho para cómo trabajás vos: gestión de clientes, stock, pedidos,
+              turnos, historial. Modelamos tu negocio de verdad en vez de forzarlo a
+              entrar en un producto genérico.
+            </p>
+          </div>
+          <div class="service">
+            <h3>Automatizaciones e infraestructura</h3>
+            <p>
+              Las tareas repetitivas que hoy hace alguien a mano: avisos por WhatsApp,
+              reportes, integraciones entre las herramientas que ya usás. Más el deploy,
+              los backups y que eso siga funcionando.
+            </p>
           </div>
         </div>
-        <img class="avatar" src="assets/avatar.jpg" alt="Foto de Nicolás Llaneza">
+      </div>
+
+      <div class="service-group">
+        <div class="group-label">Marketing</div>
+        <div class="services-grid">
+          <div class="service">
+            <h3>Identidad de marca</h3>
+            <p>
+              Definimos cómo se ve y cómo habla tu negocio: nombre, logo, paleta,
+              tipografías y el criterio para que todo lo que publiques se lea como una
+              sola cosa y no como diez piezas sueltas.
+            </p>
+          </div>
+          <div class="service">
+            <h3>Manejo de redes</h3>
+            <p>
+              Presencia constante y ordenada: planificación de contenido, piezas gráficas
+              y publicación. Lo básico bien hecho y sostenido, no un feed que se abandona
+              a los dos meses.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sistema">
+      <div class="product">
+        <div class="eyebrow">Nuestra solución</div>
+        <h2>Sistema de seguimiento post-venta</h2>
+        <p class="section-sub" style="margin-bottom: 0;">
+          Casi todos los negocios pierden clientes por lo mismo: después de la venta, nadie
+          vuelve a hablarles. Armamos un sistema que resuelve exactamente eso, y lo
+          adaptamos a tu rubro.
+        </p>
+        <ul>
+          <li>Ficha de cada cliente y de lo que le vendiste o le arreglaste, con historial completo y fotos</li>
+          <li>Avisos automáticos por WhatsApp cuando hay una novedad o cuando le toca volver</li>
+          <li>Consulta pública: tu cliente ve su historial con un solo dato, sin tener que llamarte</li>
+          <li>Panel con búsqueda, permisos por usuario y registro de quién cargó cada cosa</li>
+        </ul>
+        <p class="section-sub" style="margin-bottom: 28px;">
+          Hoy está funcionando todos los días en un taller de neumáticos. La misma base
+          sirve para cualquier negocio donde el cliente vuelve: service técnico,
+          veterinarias, consultorios, mantenimiento, equipamiento.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn-coral" href="proyectos/neu.html">Ver cómo funciona ↗</a>
+        </div>
       </div>
     </section>
 
@@ -48,8 +135,8 @@
       <p class="section-sub" style="margin-bottom: 16px;">
         MNK Labs es un estudio de desarrollo de software y marketing digital con base en
         Mendoza. Construimos lo que un negocio necesita para despegar: sitios web, sistemas
-        a medida, automatizaciones e infraestructura — y la estrategia para que esas
-        herramientas efectivamente traigan clientes.
+        a medida, automatizaciones e infraestructura — y la estrategia de marca para que
+        esas herramientas efectivamente traigan clientes.
       </p>
       <p class="section-sub" style="margin-bottom: 16px;">
         No entregamos un producto genérico con tu logo encima. Antes de escribir la primera
@@ -70,6 +157,15 @@
         Ese es el estándar con el que trabajamos: cada proyecto tiene que resolver un
         problema concreto y notarse en el día a día del negocio.
       </p>
+
+      <div class="founder">
+        <img src="assets/avatar.jpg" alt="Nicolás Llaneza">
+        <div>
+          <div class="name">Nicolás Llaneza</div>
+          <div class="role">Técnico en Programación · Desarrollador Full Stack</div>
+        </div>
+      </div>
+
       <div class="stack-tags">
         <span class="tag">JavaScript / TypeScript</span>
         <span class="tag">React</span>
@@ -79,39 +175,38 @@
         <span class="tag">Supabase</span>
         <span class="tag">n8n</span>
         <span class="tag">Docker</span>
-        <span class="tag">Java</span>
       </div>
     </section>
 
-    <section id="proyectos">
-      <h2>Proyectos</h2>
+    <section id="casos">
+      <h2>Casos y laboratorio</h2>
       <p class="section-sub">
-        Cuatro proyectos que muestran ángulos distintos: una tesis con arquitectura de
-        integración e IA, una app en producción para un cliente real, un trabajo en equipo
-        y un proyecto personal. Cada uno tiene su caso de estudio completo: problema,
-        decisiones técnicas y desafíos.
+        Un sistema en producción para un cliente real, más los proyectos donde probamos
+        arquitecturas e integraciones antes de llevarlas a un trabajo pago. Cada uno tiene
+        su caso de estudio: el problema, las decisiones técnicas y los desafíos.
       </p>
       <div class="btn-row">
-        <a class="btn btn-primary" href="proyectos/">Ver todos los proyectos ↗</a>
+        <a class="btn btn-primary" href="proyectos/">Ver todos los casos ↗</a>
       </div>
     </section>
 
     <section id="contacto">
       <div class="contact-card">
-        <h2>Hablemos</h2>
-        <p>¿Tenés un proyecto en mente o una oportunidad? Escribime.</p>
+        <h2>¿Querés saber más?</h2>
+        <p>Contanos qué necesita tu negocio y te decimos por dónde empezar.</p>
         <div class="btn-row" style="justify-content: center;">
-          <a class="btn btn-primary" href="mailto:nicolasllanezabvb@gmail.com">Enviar email</a>
-          <a class="btn btn-ghost" href="https://wa.me/5492613075850" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn-primary" href="https://wa.me/5492613075850" target="_blank" rel="noopener">Escribinos por WhatsApp</a>
+          <a class="btn btn-ghost" href="mailto:nicolasllanezabvb@gmail.com">Enviar email</a>
         </div>
       </div>
     </section>
+
   </div>
 </main>
 
 <footer>
   <div class="wrap">
-    © <span id="year"></span> Nicolás Llaneza
+    © <span id="year"></span> MNK Labs · Mendoza, Argentina
   </div>
 </footer>
 

@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Food Store — Nicolás Llaneza</title>
+<title>Food Store — MNK Labs</title>
 <meta name="description" content="Caso de estudio: e-commerce de productos alimenticios con FastAPI, SQLModel, React y auth JWT con roles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
@@ -12,10 +15,11 @@
 <header>
   <div class="wrap">
     <nav>
-      <a class="logo" href="../index.html">Nicolás Llaneza</a>
+      <a class="logo" href="../index.html"><span class="logo-mnk">MNK</span><span class="logo-labs">LABS</span></a>
       <ul class="nav-links">
-        <li><a href="./">Proyectos</a></li>
-        <li><a href="../index.html#nosotros">Sobre nosotros</a></li>
+        <li><a href="../index.html#servicios">Servicios</a></li>
+        <li><a href="../index.html#nosotros">Nosotros</a></li>
+        <li><a href="./">Casos</a></li>
         <li><a href="../index.html#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -25,8 +29,8 @@
 <main>
   <div class="wrap">
     <section class="case-hero">
-      <a class="back-link" href="./">← Volver a proyectos</a>
-      <div class="card-kicker">Trabajo grupal · Cursada</div>
+      <a class="back-link" href="./">← Volver a casos</a>
+      <div class="card-kicker">Laboratorio · Trabajo en equipo</div>
       <h1>Food Store</h1>
       <p class="lead">
         E-commerce de productos alimenticios hecho en equipo: catálogo, carrito y pedidos
@@ -34,8 +38,8 @@
       </p>
 
       <div class="case-meta">
-        <div><div class="label">Rol</div><div class="value">Trabajo en equipo (5 personas)</div></div>
-        <div><div class="label">Contexto</div><div class="value">Cursada Programación 4 · UTN-FRM</div></div>
+        <div><div class="label">Tipo</div><div class="value">Laboratorio · 5 personas</div></div>
+        <div><div class="label">Foco</div><div class="value">RBAC y máquina de estados</div></div>
         <div><div class="label">Stack</div><div class="value">FastAPI · SQLModel · React</div></div>
       </div>
 
@@ -51,7 +55,7 @@
         y un flujo de pedidos con estados.
       </p>
 
-      <h2>Qué construí</h2>
+      <h2>Qué construimos</h2>
       <p>
         Un backend en FastAPI + SQLModel sobre PostgreSQL con autenticación JWT (access y
         refresh token en cookies HttpOnly) y 4 roles con permisos distintos por endpoint
@@ -63,10 +67,10 @@
         catálogo y los pedidos.
       </p>
 
-      <h2>Mi rol</h2>
+      <h2>Nuestro rol</h2>
       <p>
         Trabajamos 5 personas dividiendo el proyecto en módulos (usuarios, catálogo,
-        pedidos). Además del código, participé del diseño del patrón repository /
+        pedidos). Además del código, participamos del diseño del patrón repository /
         unit-of-work genérico que usa todo el backend, para no repetir el mismo código de
         acceso a datos en cada módulo.
       </p>
@@ -91,7 +95,7 @@
         </li>
       </ul>
 
-      <h2>Qué haría distinto</h2>
+      <h2>Qué haríamos distinto</h2>
       <p>
         El README del proyecto ya identifica los próximos pasos: sumar websockets para que
         el cliente vea el avance de su pedido en tiempo real (hoy hay que refrescar la
@@ -109,7 +113,7 @@
 
 <footer>
   <div class="wrap">
-    © <span id="year"></span> Nicolás Llaneza
+    © <span id="year"></span> MNK Labs · Mendoza, Argentina
   </div>
 </footer>
 

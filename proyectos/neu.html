@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sistema de seguimiento post-venta — Nicolás Llaneza</title>
+<title>Sistema de seguimiento post-venta — MNK Labs</title>
 <meta name="description" content="Caso de estudio: sistema de seguimiento post-venta a medida para Neu+, un taller de neumáticos. En producción, con React y Supabase.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
@@ -12,10 +15,11 @@
 <header>
   <div class="wrap">
     <nav>
-      <a class="logo" href="../index.html">Nicolás Llaneza</a>
+      <a class="logo" href="../index.html"><span class="logo-mnk">MNK</span><span class="logo-labs">LABS</span></a>
       <ul class="nav-links">
-        <li><a href="./">Proyectos</a></li>
-        <li><a href="../index.html#nosotros">Sobre nosotros</a></li>
+        <li><a href="../index.html#servicios">Servicios</a></li>
+        <li><a href="../index.html#nosotros">Nosotros</a></li>
+        <li><a href="./">Casos</a></li>
         <li><a href="../index.html#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -25,7 +29,7 @@
 <main>
   <div class="wrap">
     <section class="case-hero">
-      <a class="back-link" href="./">← Volver a proyectos</a>
+      <a class="back-link" href="./">← Volver a casos</a>
       <div class="card-kicker">Producción · Cliente real</div>
       <h1>Sistema de seguimiento post-venta</h1>
       <p class="lead">
@@ -54,12 +58,12 @@
         sin llamar directamente al taller.
       </p>
 
-      <h2>Qué construí</h2>
+      <h2>Qué construimos</h2>
       <p>
         Una app full-stack sobre Supabase (Postgres + Auth + Edge Functions) donde el
         taller carga clientes, vehículos y servicios con fotos desde un panel con
         búsqueda y bajas lógicas (los registros no se borran, se dan de baja para no
-        perder el historial). Además armé una pantalla pública de consulta por patente,
+        perder el historial). Además armamos una pantalla pública de consulta por patente,
         protegida con Cloudflare Turnstile para evitar scraping, y un sistema de
         notificaciones automáticas por WhatsApp para avisarle al cliente cuando su
         vehículo tiene una novedad.
@@ -70,7 +74,7 @@
         <li>
           <strong>Row Level Security sin recursión:</strong> las políticas RLS de Supabase
           necesitan consultar la tabla de perfiles para saber si un usuario es admin, lo
-          que genera recursión infinita si no se resuelve con cuidado. Lo solucioné con
+          que genera recursión infinita si no se resuelve con cuidado. Lo resolvimos con
           funciones <code>SECURITY DEFINER</code> que evalúan el rol por fuera de la
           política que las llama.
         </li>
@@ -87,11 +91,39 @@
         </li>
       </ul>
 
-      <h2>Qué haría distinto</h2>
+      <h2>Replicable a cualquier rubro</h2>
+      <p>
+        Lo construimos para un taller de neumáticos, pero el problema que resuelve no es de
+        los talleres: es de cualquier negocio donde el cliente vuelve. La estructura de
+        fondo —clientes, unidades o equipos, historial de intervenciones, avisos
+        automáticos y consulta pública— es la misma; lo que cambia es el vocabulario y qué
+        dato usa el cliente para identificarse.
+      </p>
+      <ul>
+        <li>
+          <strong>Service técnico:</strong> el equipo reparado en vez del vehículo, número
+          de serie en vez de patente.
+        </li>
+        <li>
+          <strong>Veterinarias y consultorios:</strong> la mascota o el paciente, con
+          historial de visitas y recordatorio del próximo control.
+        </li>
+        <li>
+          <strong>Mantenimiento y equipamiento:</strong> la instalación o la máquina, con
+          historial de intervenciones y aviso del próximo service programado.
+        </li>
+      </ul>
+      <p>
+        Por eso lo tratamos como una base propia y no como un desarrollo que muere con el
+        proyecto: cada implementación nueva arranca con el modelo de datos, la seguridad y
+        las notificaciones ya resueltas, y el trabajo se concentra en adaptarlo al negocio.
+      </p>
+
+      <h2>Qué haríamos distinto</h2>
       <p>
         Las notificaciones por WhatsApp dependen de la aprobación de Meta para la
-        WhatsApp Business API, que tardó bastante más de lo esperado. Si lo rehiciera,
-        arrancaría ese trámite en paralelo desde el día uno del proyecto. También está
+        WhatsApp Business API, que tardó bastante más de lo esperado. Si lo rehiciéramos,
+        arrancaríamos ese trámite en paralelo desde el día uno del proyecto. También está
         planeado (pero todavía no implementado) un sistema de órdenes de trabajo para que
         los mecánicos carguen diagnósticos desde el celular y el admin los apruebe antes
         de convertirlos en presupuesto.
@@ -107,7 +139,7 @@
 
 <footer>
   <div class="wrap">
-    © <span id="year"></span> Nicolás Llaneza
+    © <span id="year"></span> MNK Labs · Mendoza, Argentina
   </div>
 </footer>
 

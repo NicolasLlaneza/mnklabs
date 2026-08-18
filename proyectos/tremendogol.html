@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TremendoGol — Nicolás Llaneza</title>
+<title>TremendoGol — MNK Labs</title>
 <meta name="description" content="Caso de estudio: app mobile-first de fixtures y resultados de fútbol con React, Express y Prisma.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
@@ -12,10 +15,11 @@
 <header>
   <div class="wrap">
     <nav>
-      <a class="logo" href="../index.html">Nicolás Llaneza</a>
+      <a class="logo" href="../index.html"><span class="logo-mnk">MNK</span><span class="logo-labs">LABS</span></a>
       <ul class="nav-links">
-        <li><a href="./">Proyectos</a></li>
-        <li><a href="../index.html#nosotros">Sobre nosotros</a></li>
+        <li><a href="../index.html#servicios">Servicios</a></li>
+        <li><a href="../index.html#nosotros">Nosotros</a></li>
+        <li><a href="./">Casos</a></li>
         <li><a href="../index.html#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -25,8 +29,8 @@
 <main>
   <div class="wrap">
     <section class="case-hero">
-      <a class="back-link" href="./">← Volver a proyectos</a>
-      <div class="card-kicker">Proyecto personal</div>
+      <a class="back-link" href="./">← Volver a casos</a>
+      <div class="card-kicker">Laboratorio · Producto propio</div>
       <h1>TremendoGol</h1>
       <p class="lead">
         App mobile-first de fixtures, resultados y tablas de posiciones de fútbol,
@@ -34,8 +38,8 @@
       </p>
 
       <div class="case-meta">
-        <div><div class="label">Rol</div><div class="value">Individual</div></div>
-        <div><div class="label">Contexto</div><div class="value">Proyecto personal</div></div>
+        <div><div class="label">Tipo</div><div class="value">Laboratorio</div></div>
+        <div><div class="label">Foco</div><div class="value">Consumo de APIs externas</div></div>
         <div><div class="label">Stack</div><div class="value">React · Express · Prisma</div></div>
       </div>
 
@@ -45,18 +49,18 @@
     <section class="case-body" style="padding-top: 0;">
       <h2>El problema</h2>
       <p>
-        Quería una forma rápida de ver qué partidos hay hoy y mañana en el fútbol
-        argentino y sudamericano, sin entrar a una app grande y cargada de contenido que
-        no me interesa. La mayoría de las apps de fútbol mezclan cientos de ligas de todo
-        el mundo sin dejarte priorizar las que realmente seguís.
+        Las apps de fútbol mezclan cientos de ligas de todo el mundo sin dejarte priorizar
+        las que realmente seguís. Queríamos una forma rápida de ver qué partidos hay hoy y
+        mañana en el fútbol argentino y sudamericano, sin navegar una app cargada de
+        contenido que no viene al caso.
       </p>
 
-      <h2>Qué construí</h2>
+      <h2>Qué construimos</h2>
       <p>
         Un frontend mobile-first en React que muestra los partidos del día agrupados por
         liga, con el estado traducido al español (primer tiempo, entretiempo, suspendido,
-        etc.) y el resultado en vivo. Atrás armé un backend propio en Express que consume
-        la API de API-Football, filtra solo las ligas que me interesan (con prioridad:
+        etc.) y el resultado en vivo. Atrás armamos un backend propio en Express que consume
+        la API de API-Football, filtra solo las ligas relevantes (con prioridad:
         Liga Profesional Argentina primero, después copas sudamericanas, después Europa) y
         usa Prisma sobre PostgreSQL para persistencia.
       </p>
@@ -65,7 +69,7 @@
       <ul>
         <li>
           <strong>Priorización de ligas:</strong> API-Football devuelve partidos de
-          cientos de ligas por día; armé un mapa de ligas permitidas con un orden de
+          cientos de ligas por día; armamos un mapa de ligas permitidas con un orden de
           prioridad para mostrar primero lo relevante y descartar el resto.
         </li>
         <li>
@@ -81,12 +85,12 @@
         </li>
       </ul>
 
-      <h2>Qué haría distinto</h2>
+      <h2>Qué haríamos distinto</h2>
       <p>
         Hoy cada carga de la página vuelve a pedirle los datos a la API externa; con el
         límite de requests del plan gratuito, un cache con expiración corta (unos
         minutos) del lado del backend evitaría pedidos repetidos sin que se note en la
-        experiencia. También me falta terminar la pestaña de tabla de posiciones, que
+        experiencia. También falta terminar la pestaña de tabla de posiciones, que
         está en el menú pero todavía no implementada.
       </p>
 
@@ -100,7 +104,7 @@
 
 <footer>
   <div class="wrap">
-    © <span id="year"></span> Nicolás Llaneza
+    © <span id="year"></span> MNK Labs · Mendoza, Argentina
   </div>
 </footer>
 
