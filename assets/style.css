@@ -159,6 +159,12 @@ h2 {
   max-width: 640px;
 }
 
+.subheading {
+  font-size: 1.05rem;
+  color: var(--text);
+  margin: 28px 0 12px;
+}
+
 /* About / stack */
 .stack-tags {
   display: flex;
