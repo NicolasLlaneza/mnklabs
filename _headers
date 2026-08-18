@@ -1,0 +1,4 @@
+# Revalidar siempre contra el origen. Sin esto el navegador puede seguir
+# mostrando una versión vieja del sitio después de un deploy.
+/*
+  Cache-Control: public, max-age=0, must-revalidate
