@@ -31,3 +31,8 @@ jobs:
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          # Necesario: la versión por defecto de la action es anterior a la
+          # 3.91, que es cuando wrangler empezó a leer config en JSON/JSONC.
+          # Sin esto ignora wrangler.jsonc y pide un entry-point que este
+          # sitio no tiene (son archivos estáticos, no un script de Worker).
+          wranglerVersion: "4"
