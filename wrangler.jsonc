@@ -1,12 +1,13 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "portfolio",
-  "main": "src/index.js",
+  "name": "mnklabs",
   "compatibility_date": "2026-07-08",
   "observability": {
     "enabled": true
   },
+  // Sitio estático: no lleva "main" porque no hay script de Worker que
+  // ejecutar, solo los archivos de public/ que Cloudflare sirve directo.
   "assets": {
-    "directory": "."
+    "directory": "public"
   }
 }
