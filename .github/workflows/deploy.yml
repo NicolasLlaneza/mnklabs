@@ -11,7 +11,21 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
+
+      # Falla temprano y con un mensaje claro si falta el token,
+      # en vez de morir dentro de wrangler con un exit code pelado.
+      - name: Verificar configuración
+        env:
+          TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "::error::Falta el secret CLOUDFLARE_API_TOKEN en Settings → Secrets and variables → Actions"
+            exit 1
+          fi
+          echo "Token presente (${#TOKEN} caracteres)"
+          echo "Archivos que se van a publicar:"
+          find public -type f | sort
 
       - name: Deploy con wrangler
         uses: cloudflare/wrangler-action@v3
